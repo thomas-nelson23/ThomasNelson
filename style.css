@@ -3,7 +3,13 @@ html {
   background-color: bisque;
 }
 
+nav {
+  background-color: aqua;
+}
+
 body {
+  background-color: bisque;
+  font-family: "Turret Road";
 }
 
 h1 {
