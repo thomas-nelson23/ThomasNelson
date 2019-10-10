@@ -36,12 +36,11 @@ img {
   border-radius: 5%;
   box-shadow: 15px 10px 7px var(--secondary);
   z-index: 1;
-  margin-top: 50px;
 }
 
 header {
-  padding-top: 45px;
-  padding-bottom: 25px;
+  padding-top: 60px;
+  padding-bottom: 105px;
   justify-content: center;
   display: flex;
   /* background-color: rgb(255, 255, 255); */
