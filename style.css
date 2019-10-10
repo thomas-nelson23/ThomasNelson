@@ -36,6 +36,8 @@ img {
   border-radius: 5%;
   box-shadow: 15px 10px 7px var(--secondary);
   z-index: 1;
+  max-width: 100%;
+  height: auto;
 }
 
 header {
@@ -61,7 +63,7 @@ main {
   background-color: rgba(20, 80, 175, 0.5);
   z-index: 3;
   margin: auto;
-  padding: 5em;
+  padding: 10%;
 }
 
 footer {
