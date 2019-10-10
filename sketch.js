@@ -25,7 +25,7 @@ var inc = 0.02;
 var start = 0;
 
 function setup() {
-  canvas = createCanvas(windowWidth, displayHeight);
+  canvas = createCanvas(windowWidth, windowHeight - 62);
   canvas.position(0, 62);
   canvas.style("z-index", "0");
 
@@ -35,7 +35,7 @@ function setup() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(windowWidth, windowHeight - 62);
 }
 
 function draw() {
