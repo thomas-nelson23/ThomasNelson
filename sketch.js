@@ -159,12 +159,16 @@ function draw() {
     line(moveX + set, mouseY * 4, mouseY * 1.21 + set, moveY);
     line(moveX + set, mouseY * 8, mouseY * 1.331 + set, moveY);
     line(moveX + set, mouseY * 16, mouseY * 1.4641 + set, moveY);
+    line(moveX + set, mouseY * 32, mouseY * 1.75692 + set, moveY);
+    line(moveX + set, mouseY * 64, mouseY * 2.108304 + set, moveY);
   } else {
     line(moveX + set, mouseY, mouseY + set, moveY);
     line(moveX + set, mouseY * 2, mouseY * 1.1 + set, moveY);
     line(moveX + set, mouseY * 4, mouseY * 1.21 + set, moveY);
     line(moveX + set, mouseY * 8, mouseY * 1.331 + set, moveY);
     line(moveX + set, mouseY * 16, mouseY * 1.4641 + set, moveY);
+    line(moveX + set, mouseY * 32, mouseY * 1.75692 + set, moveY);
+    line(moveX + set, mouseY * 64, mouseY * 2.108304 + set, moveY);
   }
 
   if (mouseX > 700 || mouseY < 200) {
