@@ -5,10 +5,12 @@
 
 html {
   background-image: url(10print.jpg);
+  z-index: -2;
 }
 
 nav {
   background-color: aqua;
+  z-index: 4;
 }
 
 body {
@@ -17,13 +19,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #359583;
+  background-color: white;
   justify-items: center;
   text-align: center;
+  z-index: 11;
 }
 
 h1 {
-  font-family: Notable;
+  /* font-family: Notable; */
   justify-content: center;
 }
 
@@ -32,13 +35,21 @@ img {
   justify-items: center;
   border-radius: 5%;
   box-shadow: 15px 10px 7px var(--secondary);
+  z-index: 1;
+  margin-top: 50px;
 }
 
 header {
+  padding-top: 45px;
+  padding-bottom: 25px;
   justify-content: center;
   display: flex;
-  background-color: antiquewhite;
-  opacity: 0.8;
+  /* background-color: rgb(255, 255, 255); */
+  /* opacity: 0; */
+  height: 100px;
+  line-height: 50px;
+  z-index: 1;
+  /* position: fixed; */
 }
 
 header h1 {
@@ -48,6 +59,10 @@ header h1 {
 main {
   display: flex;
   justify-content: center;
+  background-color: rgba(20, 80, 175, 0.5);
+  z-index: 3;
+  margin: auto;
+  padding: 5em;
 }
 
 footer {
@@ -58,6 +73,7 @@ footer {
   font-size: 2em;
   text-align: center;
   position: inherit;
+  z-index: 1;
 }
 
 .gitLink {
