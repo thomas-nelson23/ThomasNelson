@@ -29,12 +29,12 @@ function setup() {
   canvas.position(0, 62);
   canvas.style("z-index", "0");
 
-  change1 = random(0, 150); //modulator for RGB
-  change2 = random(0, 150); //modulator for RGB
-  change3 = random(0, 150); //modulator for RGB
+  change1 = random(0, 150); //modulator for RGB start point
+  change2 = random(0, 150); //modulator for RGB start point
+  change3 = random(0, 150); //modulator for RGB start point
 }
 
-function windowResized() {
+function windowResized() { //resizes canvas with window
   resizeCanvas(windowWidth, windowHeight - 62);
 }
 
@@ -53,29 +53,7 @@ function draw() {
   let g = mouseX / 18 + change2 - 20;
   let b = mouseY / 15 + change3 - 20;
 
-  //   if (mouseIsPressed) {
-  //     //beginShape(); // PERLIN WAVE
 
-  //     var xOff = start;
-
-  //     for (var x = 0; x < width; x++) {
-  //       stroke(g, b, r);
-  //       noFill();
-  //       strokeWeight(mouseX / 40);
-
-  //       var y = noise(xOff) * width;
-  //       vertex(x, y);
-
-  //       xOff += inc;
-  //     }
-
-  //     start += inc;
-
-  //     endShape();
-  //     console.log(xOff);
-
-  //     //console.log(change3); END PERLIN WAVE
-  //   }
 
   if (change1 < 0) {
     //r channel loop
