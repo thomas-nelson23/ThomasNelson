@@ -3,14 +3,8 @@
   --secondary: #847535;
 }
 
-html {
-  background-color: white;
-  z-index: -2;
-}
+main {
 
-nav {
-  background-color: white;
-  z-index: 4;
 }
 
 body {
@@ -22,8 +16,59 @@ body {
   background-color: white;
   justify-items: center;
   text-align: center;
-  z-index: 11;
+  z-index: 1;
 }
+
+
+nav {
+  background-color: white;
+  z-index: 4;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 0px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  justify-content: center;
+
+}
+
+.mainSection {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.navLink {
+  align-content: center;
+  justify-content: center;
+}
+
+li {
+  text-decoration: none;
+  justify-content: center;
+}
+
+.fas {
+  font-size: 2.8em; /* 48px - Gives a nice 'clickable' target as per: https://material.io/design/layout/spacing-methods.html#touch-targets */
+  position: absolute;
+  transform: translateX(10vw) translateY(50px);
+  /* /* transform: translateY(50vw); */
+  margin: 0px;
+  padding: 0px;
+} 
+
+
+
+
 
 h1 {
   /* font-family: Notable; */
@@ -54,17 +99,6 @@ header h1 {
   opacity: 1;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-  background-color: rgba(200, 200, 200, 0.5);
-  z-index: 3;
-  margin: 10%;
-  margin-top: 1em;
-  padding: 10%;
-  font-family: garamond;
-  border-radius: 2rem;
-}
 
 footer {
   flex-direction: column;
@@ -78,9 +112,11 @@ footer {
   /* position: inherit; */
   z-index: 1;
 
-  position: absolute;
-  bottom: 0;
+  /* position: absolute; */
+  /* bottom: 0; */
   width: 100%;
+
+  align-content: flex-end;
 }
 
 .gitLink {
@@ -91,3 +127,43 @@ footer {
   position: inherit;
 }
 
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-image: url(/picture.jpg);
+
+  height 20vh;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+
+  /* background-size: 800px 800px; */
+  /* background-position: ;
+  background-repeat: ; */
+
+  
+
+}
+
+.image {
+  position: absolute;
+
+}
+
+.is-hidden--mobile {
+  font-size: 0;
+  height: 0;
+}
+
+@media (min-width: 769px) {
+  .is-hidden--mobile {
+    font-size: 1em;
+    height: 1em;
+  }
+}
+
+.text {
+  z-index: 2;
+}

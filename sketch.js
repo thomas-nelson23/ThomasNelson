@@ -25,8 +25,8 @@ var inc = 0.02;
 var start = 0;
 
 function setup() {
-  canvas = createCanvas(windowWidth, windowHeight - 62);
-  canvas.position(0, 62);
+  canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0, 0);
   canvas.style("z-index", "0");
 
   change1 = random(0, 150); //modulator for RGB start point
@@ -35,7 +35,7 @@ function setup() {
 }
 
 function windowResized() { //resizes canvas with window
-  resizeCanvas(windowWidth, windowHeight - 62);
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
